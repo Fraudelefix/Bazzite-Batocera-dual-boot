@@ -15,6 +15,26 @@ I have zero coding knowledge, this was built entirely by ChatGPT-5 (after a lot 
 
 # Installation process
 
+### 1) Create a desktop folder
+
+```bash
+mkdir -p "$HOME/Desktop/RebootToBatocera"
+```
+
+### 2) Add sudoers rule (explicit; no aliases)
+
+```bash
+sudo visudo -f /etc/sudoers.d/99-reboot-batocera
+```
+
+```bash
+bazzite ALL=(root) NOPASSWD: /usr/sbin/efibootmgr, /usr/bin/systemctl
+```
+
+```bash
+sudo chmod 440 /etc/sudoers.d/99-reboot-batocera
+```
+
 ### 3) Create the script
 
 ```bash
