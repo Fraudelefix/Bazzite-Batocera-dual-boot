@@ -4,8 +4,6 @@ This utility allows you to reboot your Steam Deck (or any Linux PC) directly int
 My goal was to use a single PC as (i) a SteamOS PC and (ii) an emulation box and switching between the two only with controller inputs.
 I have zero coding knowledge, this was built entirely by ChatGPT-5.
 
----
-
 ## Features
 - Detects Batocera USB by label.
 - Sets EFI BootNext automatically.
