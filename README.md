@@ -24,7 +24,7 @@ mkdir -p "$HOME/Desktop/RebootToBatocera"
 ### 2) Add sudoers rule (explicit; no aliases)
 
 ```bash
-echo "bazzite ALL=(root) NOPASSWD: /usr/sbin/efibootmgr, /usr/bin/systemctl" | sudo tee /etc/sudoers.d/99-reboot-batocera >/dev/null && \
+echo "bazzite ALL=(root) NOPASSWD: /usr/sbin/efibootmgr, /usr/bin/systemctl" | sudo tee /etc/sudoers.d/99-reboot-batocera >/dev/null
 ```
 
 ```bash
