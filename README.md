@@ -5,7 +5,7 @@ I initially had 2 different PC under the TV, one running Bazzite and one running
 My goal with was to use a single PC running both (i) a SteamOS PC and (ii) Batocera, with the ability to switch between the two only with controller inputs.
 I have zero coding knowledge, this was built entirely by ChatGPT-5 (after a lot of trial and error). I have no idea if there is a better way to do it. This just works for me.
 
-## Features
+### Features
 - Detects Batocera USB by label.
 - Sets EFI BootNext automatically.
 - Optional "no reboot" mode for testing.
@@ -13,17 +13,9 @@ I have zero coding knowledge, this was built entirely by ChatGPT-5 (after a lot 
 
 ---
 
-## Requirements
-- Batocera USB stick inserted and labelled `BATOCERA`.
-- `efibootmgr` and `systemctl` installed.
-- `sudo` configured with NOPASSWD for these commands:
-  ```bash
-  /usr/sbin/efibootmgr, /usr/bin/systemctl
+# Installation process
 
-
----
-
-## Create the script
+### 3) Create the script
 
 ```bash
 nano "$HOME/Desktop/RebootToBatocera/reboot-to-batocera.sh"
@@ -131,6 +123,8 @@ Make it executable
 chmod 755 "$HOME/Desktop/RebootToBatocera/reboot-to-batocera.sh"
 ```
 
+### 4) Test from a terminal
+
 Test from a terminal. This should not actually reboot. Instead, you should see entries like:
 - Matched partition: /dev/sdX1 …
 - Setting BootNext to: 0001
@@ -147,7 +141,7 @@ Real reboot:
 ```
 
 
-## 5) Add Steam Big Picture launchers (optional)
+### 5) Add Steam Big Picture launchers (optional)
 
 ```bash
 cat > "$HOME/.local/share/applications/reboot-to-batocera.desktop" <<'EOF'
@@ -159,3 +153,4 @@ Terminal=false
 Categories=Game;
 EOF
 ```
+In Steam: Add a Non-Steam Game. Tick "Reboot to Batocera". This will now appear as a game in Steam and BigPicture. Once you run the game, the PC will reboot to Batocera.
