@@ -11,6 +11,12 @@ I have zero coding knowledge, this was built entirely by ChatGPT-5 (after a lot 
 - Optional "no reboot" mode for testing.
 - Works from desktop or Steam Big Picture Mode.
 
+### My setup
+- Bazzite OS and installed on SSD1.
+- Bazzite game library stored on SSD1. 
+- Batocera OS installed on a USB thumb drive and plugged into a USB port of the PC.
+- Batocera game library stored on SSD2.
+
 ---
 
 # Installation process
