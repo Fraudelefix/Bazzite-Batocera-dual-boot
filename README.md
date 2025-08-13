@@ -1,7 +1,8 @@
 # Reboot to Batocera from SteamOS / Bazzite
 
 This utility allows you to reboot your Steam Deck (or any Linux PC) directly into a Batocera USB drive without needing to go through the BIOS boot menu.
-My goal was to use a single PC as (i) a SteamOS PC and (ii) an emulation box and switching between the two only with controller inputs.
+I initially had 2 different PC under the TV, one running Bazzite and one running Batocera, to avoid having to go to the BIOS boot menu and chosing which OS to boot to.
+My goal with was to use a single PC running both (i) a SteamOS PC and (ii) Batocera, with the ability to switch between the two only with controller inputs.
 I have zero coding knowledge, this was built entirely by ChatGPT-5.
 
 ## Features
