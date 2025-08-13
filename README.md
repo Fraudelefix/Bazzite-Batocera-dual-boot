@@ -174,3 +174,14 @@ Categories=Game;
 EOF
 ```
 In Steam: Add a Non-Steam Game. Tick "Reboot to Batocera". This will now appear as a game in Steam and BigPicture. Once you run the game, the PC will reboot to Batocera.
+
+# Uninstall
+
+All steps above will fully uninstall anything the script/documentation had you add or install.
+If you need a single block to copy-paste, here it is:
+
+```bash
+rm -rf "$HOME/Desktop/RebootToBatocera"
+sudo rm -f /etc/sudoers.d/99-reboot-batocera
+rm -f "$HOME/.local/share/applications/reboot-to-batocera.desktop"
+```
